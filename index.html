@@ -1,7 +1,7 @@
 
 <!--doctype html-->
 
-<!-- Copyright Julianne Quinn - Spring 2024 -->
+<!-- Copyright Julianne Quinn - Spring 2025 -->
 <!-- Web template from Dr. Vicente Ordonez -->
 <!-- julianne.quinn@virginia.edu -->
 
@@ -11,8 +11,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Julianne Quinn, 2024">
-  <title>Environmental Systems Modeling and Management (CE 4110 / CE 6250)</title>
+  <meta name="author" content="Julianne Quinn, 2025">
+  <title>Stochastic Hydrology (CE 6280)</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/vision-style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
@@ -34,7 +34,7 @@
         <img src="images/uva-logo.png" height="100"> 
 
         <h4 class="mb-1" style="color:#444;margin-top:10px">
-          CE 4110/6250: Environmental Systems Modeling and Management<span style="color:#767676;font-size:0.8em"> | Spring 2024</span>
+          CE 6280: Stochastic Hydrology<span style="color:#767676;font-size:0.8em"> | Spring 2024</span>
         </h4>
         
         <div>
@@ -45,14 +45,10 @@
         </div>
         <div>
           <span>Instructor: <a href="https://engineering.virginia.edu/faculty/julianne-quinn"><strong>Julianne Quinn</strong></a></span>
-          <span class="d-lg-inline d-block mb-lg-0 mb-2">(julianne.quinn at virginia.edu), <span style="font-size:0.9em">Office Hours: Thur 3:30-5 PM in Olsson 102D and Fri 5-6:30 PM on Zoom.</span></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(julianne.quinn at virginia.edu), <span style="font-size:0.9em">Office Hours: Wed 3:30-5 PM in Olsson 102D and Fri 5-6:30 PM on Zoom.</span></span>
         </div>
-        <div>
-          <span>Teaching Assistant: <a href="https://www.linkedin.com/in/dcl-uva/"><strong>Daniel Lassiter</strong></a></span> 
-          <span class="d-lg-inline d-block mb-lg-0 mb-2">(dcl3nd at virginia.edu), <span style="font-size:0.9em">Office Hours: Tue 3-4:30 PM in Olsson 105 and on Zoom.</span></span> 
-        </div>
-        <div style="font-weight:400">Class Time: Tuesday and Thursday between 11 AM and 12:15 PM (ET).</div>
-        <div>Discussion Forum: <a href="https://piazza.com/class/lr74ym6rn5g2cy">Piazza</a></div>
+        <div style="font-weight:400">Class Time: Monday and Wednesday between 2 PM and 3:15 PM (ET).</div>
+        <div>Discussion Forum: <a href="">Piazza</a></div>
 
       </div>
 <!-- <div class="col-1 text-right d-lg-block d-none">
@@ -84,30 +80,40 @@
       
       <div class="col-12 p-2" id="description" style="padding-top: 2 em;">
   <strong><b>Course Description: </b></strong>
-          <p>This course emphasizes the formulation of environmental management issues as optimization problems. 
-            Simulation models will be presented and then combined with optimization algorithms. 
-            Environmental issues to be addressed may include power capacity expansion, air quality, water quality, water supply, and reservoir operations. 
-            Optimization techniques presented include linear programming, dynamic programming, nonlinear programming and genetic algorithms.</p>
+          <p>The goal of this course is to illustrate the importance of uncertainty analysis in hydrology. 
+            Whether data-driven or mechanistically-driven, all hydrologic models have errors, 
+            and the data used to build such models represent just a sample of a stochastic process. 
+            Quantifying the uncertainty in hydrologic model predictions due to limited data availability and model error 
+            is important for informing the design and management of civil infrastructure systems. 
+
+            In this course, students will learn stochastic methods used in hydrology for this purpose. 
+            Specific statistical concepts covered include applications of extreme value theory 
+            to estimate flood and drought statistics, parameter estimation for hydrological model calibration, 
+            and trend analysis of historical time series. Students should leave the course with an understanding 
+            of how to apply these methods in practice to design civil infrastructure systems that are robust to 
+            hydrologic uncertainty.</p>
       </div>
       <div class="col-12 p-2" id="objectives" style="padding-top: 2 em;">
   <strong><b>Learning Objectives: </b></strong> 
      <ul>
-    <li>Simulate a variety of simple environmental systems.</li>
-    <li>Formulate and solve linear, nonlinear, dynamic, and stochastic programming problems.</li>
-    <li>Use optimization software to analyze environmental systems and interpret the output to guide management decisions.</li>
-    <li>Understand the importance of accounting for uncertainty in environmental decision-making problems.</li>
-    <li>Learn to present a structured, organized systems analysis.</li>
+    <li>Recognize the importance of considering uncertainty in hydrologic design.</li>
+    <li>Learn how to estimate the return period of flood and drought events, and to quantify the uncertainty in those estimates.</li>
+    <li>Learn how to estimate parameter values of hydrological models, including uncertainty in those estimates.</li>
+    <li>Learn how to build predictive models of hydrologic time series variables.</li>
+    <li>Critically evaluate statistical methods used in the hydrologic literature.</li>
+    <li>Build a foundation for how to model stochastic hydrologic processes to inform engineering design.</li>
     </ul>
   </div>
       <div class="col-6 p-2" id="prereqs" style="padding-top: 2 em;">
         <strong><b>Prerequisites: </b></strong> 
-        <p> Students should have a basic command of linear algebra, calculus, statistics, and programming. We will use Python for our programming sessions.</p>
+        <p> APMA 3100 and CE 3220 or equivalent. We will use Python or R for coding demonstrations.</p>
       </div>
 
       <div class="col-6 p-2" id="textbook" style="padding-top: 2 em;">
   <strong><b>Textbook:</b></strong> 
     <ul>
     <li>Loucks, D. P., & Van Beek, E. (2017). <a href="https://link.springer.com/book/10.1007/978-3-319-44234-1">Water resource systems planning and management: An introduction to methods, models, and applications.</a> Springer.</li>
+    <li>Stedinger, J.R., Vogel, R.M., Foufoula-Georgiou, E. (1993). Frequency Analysis of Extreme Events. In: Maidment, D.R. (Ed.) <a href="http://dl.watereng.ir/HANDBOOK_OF_HYDROLOGY.PDF">Handbook of Hydrology.</a> New York: McGraw-Hill.</li>
     </ul>
       </div>
     </div>
@@ -128,458 +134,549 @@
         <thead>
           <tr>
             <th scope="col">Date</th>
-            <th scope="col">Topic</th>
-            <th scope="col" colspan="8">Applications</th>
+            <th scope="col">Hydrology Topic</th>
+            <th scope="col">Statistical Concept</th>
+            <th scope="col">Readings</th>
           </tr>
         </thead>
         <tbody>
         <tr>
-          <td>Thur, Jan 18th</td>
+          <td>Mon, Jan 13th</td>
           <td>
-            Introduction to Environmental Systems Modeling and Problem Framing <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Introduction to Stochastic Hydrology <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Integrated Assessment Models and Reservoir Operations
+            None
+          </td>
+          <td>
+            None
           </td>
         </tr>
   
         <tr>
-          <td>Tue, Jan 23rd</td>
+          <td>Wed, Jan 15th</td>
           <td>
-            Analytical Nonlinear Optimization <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Flood Statistics from Annual Maxima <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Waste Disposal
+            Method of Moments and Maximum Likelihood Estimation <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td>
+            None
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Jan 25th</td>
+          <td>Mon, Jan 20th</td>
           <td>
-            Nonlinear Programming (NLP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            No Class - Martin Luther King, Jr. Day <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Waste Disposal, Water Allocation
+            None
+          </td>
+        </tr>
+
+        <tr>
+          <td>Wed, Jan 22nd</td>
+          <td>
+            Estimating Flood Statistics from Annual Maxima Series (AMS)<!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td>
+            Fitting Distributions in Python or R <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td>
+            <a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-9496(1985)111:3(321)">Thomas, 1985</a>
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Jan 25th</strong></td>
+          <td><strong>Wed, Jan 22nd</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 1: Analytical Nonlinear Optimization
-            <div class="mt-1 p-0"><strong>Due: Fri, Feb 2nd / Sun, Feb 4th (VEO).</strong></div>
+            Release Homework 1: Estimating Flood Statistics from Annual Maxima
+            <div class="mt-1 p-0"><strong>Due: Fri, Jan 31st / Sun, Feb 2nd (VEO).</strong></div>
           </td>
         </tr>
         
          <tr>
-          <td>Tue, Jan 30th</td>
+          <td>Mon, Jan 27th</td>
           <td>
-            Non-Convex Environmental Models <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Flood Statistics <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Predator-Prey Systems
+            L-Moment Estimators <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/93wr00341">Vogel and Fennessey, 1993</a>
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Feb 1st</td>
+          <td>Wed, Jan 29th</td>
           <td>
-            Evolutionary Algorithms (EAs) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            No Class - Prof. Quinn on NSF panel <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Hydrological model calibration
+            None
+          </td>
+          <td>
+            None
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Feb 1st</strong></td>
+          <td><strong>Fri, Jan 31st / Sun, Feb 1st (VEO)</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 2: NLP and EAs
-            <div class="mt-1 p-0"><strong>Due: Fri, Feb 16th / Sun, Feb 18th (VEO).</strong></div>
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Fri, Feb 2nd / Sun, Feb 4th (VEO)</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 1: Analytical Nonlinear Optimization
+            <strong>Due</strong> Homework 1: Estimating Flood Statistics from AMS
           </td>
         </tr>
     
         <tr>
-          <td>Tue, Feb 6th</td>
+          <td>Mon, Feb 3rd</td>
           <td>
-            Evolutionary Algorithms (EAs) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Quantifying Goodness of Fit of Flood Statistics <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Hydrological model calibration
+            Hypothesis Tests, Monte Carlo Simulation
+          </td>
+          <td>
+            <a href="https://sites.tufts.edu/richardvogel/files/2019/04/frequencyAnalysis.pdf">Stedinger et al., 1993</a>
           </td>
         </tr>
-
+          
         <tr>
-          <td>Thur, Feb 8th</td>
+          <td>Wed, Feb 5th</td>
           <td>
-            Linear Programming (LP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Uncertainty in Flood Statistics <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Groundwater use
+            Sampling Variability, Bootstrapping
+          </td>
+          <td>
+            <a href="https://sites.tufts.edu/richardvogel/files/2019/04/frequencyAnalysis.pdf">Stedinger et al., 1993</a>
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Feb 8th</strong></td>
+          <td><strong>Wed, Feb 5th</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 3: Linear Programming
-            <div class="mt-1 p-0"><strong>Due: Fri, Feb 23rd / Sun, Feb 15th (VEO).</strong></div>
+            Release Homework 2: Comparing Flood Estimators and Quantifying Uncertainty
+            <div class="mt-1 p-0"><strong>Due: Fri, Feb 14th / Sun, Feb 16th (VEO).</strong></div>
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Feb 13th</td>
+          <td>Mon, Feb 10th</td>
           <td>
-            Linear Programming (LP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Flood Statistics from Peaks over Threshold <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Power System Capacity Expansion
+            Poisson Processes
+          </td>
+          <td>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96WR03848">Madsen et al., 1997</a>
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Feb 15th</td>
+          <td>Wed, Feb 12th</td>
           <td>
-            Linear Programming (LP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Flood Statistics from POT <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Power System Capacity Expansion
+            Coding POT estimation in Python or R
+          </td>
+          <td>
+            None
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Fri, Feb 9th / Sun, Feb 11th (VEO)</strong></td>
+          <td><strong>Wed, Feb 12th</strong></td>
           <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 2: NLP and EAs
-          </td>
-        </tr>
-
-        <tr>
-          <td>Tue, Feb 20th</td>
-          <td>
-            Mixed Integer Linear Programming (MILP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-          <td>
-            Power system unit commitment/economic dispatch
-          </td>
-        </tr>
-
-        <tr>
-          <td>Thur, Feb 22nd</td>
-          <td>
-            Mixed Integer Linear Programming (MILP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-          <td>
-            Power system unit commitment/economic dispatch
+            Release Homework 3: POT vs. AMS Flood Estimation
+            <div class="mt-1 p-0"><strong>Due: Fri, Feb 21st / Sun, Feb 23rd (VEO).</strong></div>
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Feb 22nd</strong></td>
+          <td><strong>Fri, Feb 14th / Sun, Feb 16th (VEO)</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 4: Mixed Integer Linear Programming
-            <div class="mt-1 p-0"><strong>Due: Sun, Mar 3rd.</strong></div>
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Sun, Feb 25th (VEO)</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 3: Linear Programming
+            <strong>Due</strong> Homework 2: Comparing Flood Estimators and Quantifying Uncertainty
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Feb 27th</td>
+          <td>Mon, Feb 17th</td>
           <td>
-            Deterministic Dynamic Programming (DDP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Including Historical Info in Flood Estimations <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Wind farm capacity expansion
+            Expected Moments Algorithm (EMA)
+          </td>
+          <td>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/97WR01640">Cohn et al., 1997</a>
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Feb 29th</td>
+          <td>Wed, Feb 19th</td>
           <td>
-            Deterministic Dynamic Programming (DDP)
+            Including Historical Info in Flood Estimations <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Reservoir operations
+            Coding EMA in Python or R
+          </td>
+          <td>
+            None
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Feb 29th</strong></td>
+          <td><strong>Wed, Feb 19th</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 5: Deterministic Dynamic Programming
+            Release Homework 4: Flood Estimation with Historical Info
+            <div class="mt-1 p-0"><strong>Due: Fri, Feb 28th / Sun, Mar 2nd (VEO)</strong></div>
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Fri, Feb 21st / Sun, Feb 23rd (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Homework 3: POT vs. AMS Flood Estimation
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mon, Feb 24th</td>
+          <td>
+            Stationary vs. Non-stationary Flood Time Series <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td>
+            Stationarity, Time Series Analysis
+          </td>
+          <td>
+            <a href="https://www.science.org/doi/full/10.1126/science.1151915?casa_token=wEDtvpXyiW4AAAAA%3AOkb7CzO1wGM-Ii6yB7N4Pbk63BDwhPr57QKnlSl3FurAM7P_hNW8lbwRtIlnWmhq6FcxSGHe0WSsyjI">Milly et al., 2008</a>;
+            <a href="https://www.tandfonline.com/doi/full/10.1080/02626667.2014.959959">Koutsoyiannis and Montanari, 2015</a>;
+            <a href="https://www.sciencedirect.com/science/article/pii/S0309170815000020">Serinaldi and Kilsby, 2015</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Wed, Feb 26th</td>
+          <td>
+            Modeling Time Series with Regression
+          </td>
+          <td>
+            Time Series Analysis, Regression
+          </td>
+          <td>
+            None
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Fri Feb 28th / Sun, Mar 2nd (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Homework 4: Flood Estimation with Historical Info
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Mon, Mar 3rd</strong></td>
+          <td>
+            Modeling Time Series with Regression
+          </td>
+          <td>
+            Time Series Analysis via Regression in Python or R
+          </td>
+          <td>
+            None
+          </td>
+        </tr>
+
+         <tr>
+          <td><strong>Wed, Mar 5th</strong></td>
+          <td>
+            Non-Parametric Trend Detection
+          </td>
+          <td>
+            Non-parametric statistical tests
+          </td>
+          <td>
+            None
+          </td>
+        </tr>
+
+         <tr class="assignment">
+          <td><strong>Wed, Mar 5th</strong></td>
+          <td class="text-center" colspan="8">
+            Release Homework 5: Time Series Analysis of Annual Maxima Series
             <div class="mt-1 p-0"><strong>Due: Sun, Mar 24th.</strong></div>
           </td>
         </tr>
 
-        <tr class="assignment">
-          <td><strong>Sun, Mar 3rd</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 4: Mixed Integer Linear Programming
-          </td>
-        </tr>
-
         <tr>
-          <td><strong>Tue, Mar 5th</strong></td>
+          <td><strong>Mon, Mar 10th</strong></td>
           <td class="text-center" colspan="8">
-            SPRING BREAK
-          </td>
-        </tr>
-
-         <tr>
-          <td><strong>Thur, Mar 7th</strong></td>
-          <td class="text-center" colspan="8">
-            SPRING BREAK
-          </td>
-        </tr>
-
-        <tr>
-          <td><strong>Tue, Mar 12th</strong></td>
-          <td class="text-center" colspan="8">
-             Exam 1 Review
+             Spring Break
           </td>
         </tr>
 
         <tr class="exam">
-          <td>Thur, Mar 14th</td>
+          <td>Wed, Mar 12th</td>
           <td class="text-center" colspan="8">
-            Exam 1: HW 1-4 Content
+            Spring Break
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Mar 19th</td>
+          <td>Mon, Mar 17th</td>
           <td>
-            Deterministic Dynamic Programming <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Flood Estimation under Climate Change <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Reservoir operations
+            Non-stationary parameter estimation
+          </td>
+          <td>
+            <a href="https://link.springer.com/chapter/10.1007/978-94-007-4479-0_2">Katz, 2013. (Ch. 2)</a>
           </td>
         </tr>
 
         <tr>
-          <td>Mar 21st</td>
+          <td>Wed, Mar 19th</td>
           <td>
-            Modeling Uncertainty
+            Flood Estimation from Multiple Drivers (e.g. Rainfall vs. Snowmelt)
           </td>
           <td>
-            Metal waste disposal
+            Mixture Distributions
+          </td>
+          <td>
+            <a href="https://ecommons.cornell.edu/server/api/core/bitstreams/c1fc4613-bbd4-47db-a2e2-00a44c48eeff/content">Yu, 2017 (Ch. 2)</a>
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Thur, Mar 21st</strong></td>
+          <td><strong>Wed, Mar 19th</strong></td>
           <td class="text-center" colspan="8">
-            Release Homework 6: Decision Theory and Chance Constrained Programming
-            <div class="mt-1 p-0"><strong>Due: Wed, Apr 3rd.</strong></div>
+            Release Homework 6: Nonstationary, Non-iid Flood Estimation
+            <div class="mt-1 p-0"><strong>Due: Fri, Mar 28th / Sun Mar 30th (VEO).</strong></div>
           </td>
         </tr>
 
         <tr class="assignment">
-          <td><strong>Sun, Mar 24th</strong></td>
+          <td><strong>Fri Mar 21st / Sun, Mar 23rd (VEO)</strong></td>
           <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 5: Deterministic Dynamic Programming
+            <strong>Due</strong> Homework 5: Time Series Analysis of Annual Maxima Series
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Mar 26th</td>
+          <td>Mon, Mar 24th</td>
           <td>
-            Decision Theory and Chance Constraints <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Potentially Influential Low Flows in Flood Estimation <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>
           <td>
-            Metal waste disposal
+            Multiple Grubbs Beck Outlier Test
+          </td>
+          <td>
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015WR018093">Lamontagne et al., 2016</a>
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Mar 28th</td>
+          <td>Wed, Mar 26th</td>
           <td>
-            Air Quality Modeling <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Estimating Low Flow Distributions <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>   
           <td>
-            Air Quality Modeling
+            Weibull Distribution
+          </td>
+          <td>
+            None
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Wed, Mar 24th</strong></td>
+          <td class="text-center" colspan="8">
+            Release Homework 7: Low Flow Estimation and Outlier Detection
+            <div class="mt-1 p-0"><strong>Due: Fri, Apr 11th / Sun Apr 13th (VEO).</strong></div>
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Fri Mar 28th / Sun, Mar 30th (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Homework 6: Nonstationary, Non-iid Flood Estimation
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Apr 2nd</td>
+          <td>Mon, Mar 31st</td>
           <td>
-            Stochastic Dynamic Programming (SDP) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Exam review <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
           </td>   
           <td>
-            Reservoir operations
-          </td>
-        </tr>
-
-       <tr class="assignment">
-          <td><strong>Tue, Apr 2nd</strong></td>
-          <td class="text-center" colspan="8">
-            Release Homework 7: Stochastic Dynamic Programming
-            <div class="mt-1 p-0"><strong>Due: Fri, Apr 5th / Sun, Apr 7th (VEO).</strong></div>
-          </td>
-        </tr>
-
-      <tr class="assignment">
-          <td><strong>Tue, Apr 42nd</strong></td>
-          <td class="text-center" colspan="8">
-            Release Project Proposal Assignment (CE 6250 only)
-            <div class="mt-1 p-0"><strong>Due: 11:59 PM Sun, Apr 14th.</strong></div>
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Wed Apr 3rd</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 6: Decision Theory and Chance Constraints
+            None
+          </td>  
+          <td>
+            None
           </td>
         </tr>
 
         <tr>
-          <td>Thur, Apr 4th</td>
+          <td>Wed, Apr 2nd</td>
           <td>
-            Stochastic Dynamic Programming
-          </td>
+            Conceptual Exam Questions in Class <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>   
           <td>
-            Reservoir operations
-          </td>
-        </tr>    
-       
-        <tr>
-          <td>Tue, Apr 9th</td>
+            None
+          </td>  
           <td>
-            Direct Policy Search (DPS) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-          <td>
-            Reservoir operations
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Tue, Apr 9th</strong></td>
-          <td class="text-center" colspan="8">
-            Release Optional Homework 8: DPS and MOEAs
-            <div class="mt-1 p-0"><strong>Due: Wed, Apr 24th.</strong></div>
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Wed, Apr 10th</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Homework 7: Stochastic Dynamic Programming
-          </td>
-        </tr>
-
-         <tr>
-          <td>Thur, Apr 11th</td>
-          <td>
-            Multi-Objective Evolutionary Algorithms (MOEAs) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-           <td>
-             Lake water quality
-           </td>
-         </tr>
-
-        <tr class="assignment">
-          <td><strong> Apr 14th</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Project Proposal (CE 6250 only)
-          </td>
-        </tr>
-
-         <tr>
-          <td>Tue Apr 16th</td>
-          <td class="text-center" colspan="8">
-            Exam 2 Review <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-        </tr>
-    
-         <tr class="exam">
-          <td>Thur, Apr 18th</td>
-          <td class="text-center" colspan="8">
-            Exam 2 Conceptual Questions<!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            None
           </td>
         </tr>
 
        <tr class="exam">
-          <td>Sun, Apr 21st</td>
+          <td><strong>Wed, Apr 2nd</strong></td>
           <td class="text-center" colspan="8">
-            Exam 2 Take-Home Questions due<!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+            Release Take-Home Exam
+            <div class="mt-1 p-0"><strong>Due: Sun, Apr 6th.</strong></div>
           </td>
         </tr>
 
         <tr>
-          <td>Tue, Apr 23rd</td>
+          <td>Mon, Apr 7th</td>
+          <td>
+            Estimation of Drought Statistics
+          </td>
+          <td>
+            Multivariate Distributions
+          </td>
+          <td>
+            None
+          </td>
+        </tr>    
+       
+        <tr>
+          <td>Wed, Apr 9th</td>
+          <td>
+            Estimation of Drought Statistics
+          </td>
+          <td>
+            Fitting Multivariate Distributions in Python or R
+          </td>
+          <td>
+            None
+          </td>
+        </tr>  
+
+        <tr class="assignment">
+          <td><strong>Wed, Apr 9th</strong></td>
           <td class="text-center" colspan="8">
+            Release Final Project
+            <div class="mt-1 p-0"><strong>Proposal Due: Fri, Apr 18th / Sun Apr 20th (VEO).</strong></div>; 
+            <div class="mt-1 p-0"><strong>Paper Due: Fri, May 9th.</strong></div>;
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Fri, Apr 11th / Sun, Apr 13th (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Homework 7: Low Flow Estimation and Outlier Detection
+          </td>
+        </tr>
+
+         <tr>
+          <td>Mon, Apr 14th</td>
+          <td>
+            Estimation of Drought Statistics <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+           <td>
+             Copulas
+           </td>
+           <td>
+             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0309170813000493">Hao and AghaKouchak, 2013</a>
+           </td>
+         </tr>
+
+         <tr>
+          <td>Wed, Apr 16th</td>
+          <td>
+            Estimation of Drought Statistics <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+           <td>
+             Fitting Copulas in Python or R
+           </td>
+           <td>
+             None
+           </td>
+         </tr>
+
+        <tr class="assignment">
+          <td><strong>Wed, Apr 16th</strong></td>
+          <td class="text-center" colspan="8">
+            Release Homework 8: Estimating Multivariate Drought Statistics
+            <div class="mt-1 p-0"><strong>Due: Fri, Apr 25th / Sun Apr 27th (VEO).</strong></div>; 
+          </td>
+        </tr>
+
+        <tr class="assignment">
+          <td><strong>Fri, Apr 18th / Sun, Apr 20th (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Project Proposal
+          </td>
+        </tr>
+
+         <tr>
+          <td>Mon, Apr 21st</td>
+          <td>
+            Hydrological Model Calibration <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+           <td>
+             Bayes Rule, Markov Chain Monte Carlo (MCMC)
+           </td>
+           <td>
+             <a href="">Beven and Binley, </a>;
+             <a href="">Stedinger et al., 2008</a>;
+           </td>
+        </tr>
+    
+         <tr>
+          <td>Wed, Apr 23rd</td>
+          <td>
+            Hydrological Model Calibration <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+           <td>
+             Coding MCMC in Python or R
+           </td>
+           <td>
+             None
+           </td>
+        </tr>
+
+       <tr class="assignment">
+          <td><strong>Fri, Apr 25th / Sun, Apr 27th (VEO)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Homework 8: Estimating Multivariate Drought Statistics
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mon, Apr 28th</td>
+          <td>
             Project Time in Class
           </td>
-        </tr>
-
-        <tr class="assignment">
-          <td>Tue, Apr 23rd</td>
-          <td class="text-center" colspan="8">
-            Release Project Presentation Recording Assignment
-            <div class="mt-1 p-0"><strong>Due: Sun, Apr 28th.</strong></div>
+          <td>
+            None
           </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Wed, Apr 24th</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Optional Homework 8: DPS and MOEAs
-          </td>
-        </tr>
-
-       <tr>
-          <td>Thur, Apr 25th</td>
-          <td class="text-center" colspan="8">
-            Project Time in Class<!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Sun, Apr 28th</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Project Presentation Recordings
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Mon, Apr 29th</strong></td>
-          <td class="text-center" colspan="8">
-            Release Peer Feedback on Project Presentations Assignment
-            <div class="mt-1 p-0"><strong>Due: 11:59 PM Tue Apr 30th.</strong></div>
-          </td>
-        </tr>
-
-        <tr class="assignment">
-          <td><strong>Wed, Apr 30th</strong></td>
-          <td class="text-center" colspan="8">
-            <strong>Due</strong> Peer Feedback on Project Presentations
-          </td>
-        </tr>
-        
-        <tr>
-          <td>Tue, Apr 30th</td>
-          <td class="text-center" colspan="8">
-            Peer Feedback on Project Presentations <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          <td>
+            None
           </td>
         </tr>
           
         <tr class="assignment">
-          <td><strong>Thur, May 9th / Sat, May 11th (VEO)</strong></td>
+          <td><strong>Fri, May 9th</strong></td>
           <td class="text-center" colspan="8">
             <strong>Due </strong>Project Report
           </td>
